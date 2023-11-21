@@ -23,7 +23,7 @@ const ContadorResponsive = () => {
     <div>
       <Flex bg="pink" minWidth="max-content" alignItems="center" gap="2">
         <Box p="2">
-          <Heading size="md">Contador de Liliana Quintana </Heading>
+          <Heading size="md">Contador</Heading>
         </Box>
         <Spacer />
         <ButtonGroup gap="2">
