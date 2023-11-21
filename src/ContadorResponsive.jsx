@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Stack, Box, Button, Container, Avatar, Flex } from "@chakra-ui/react";
+import React, { useState, useEffect } from "react";
+import { Stack, Box, Button, Container, Avatar, Flex, AlertDialog } from "@chakra-ui/react";
 import { Spacer, Heading, ButtonGroup } from "@chakra-ui/react";
 
 const ContadorResponsive = () => {
@@ -8,14 +8,18 @@ const ContadorResponsive = () => {
   function incrementar() {
     if (count < 10) {
       setCount(count + 1);
-    }
+      document.body.style.backgroundColor="green";
+    
+    }else{AlertDialog("solo 10 productos")};
   }
   const reset = () => {
     setCount(0);
+    document.body.style.backgroundColor="white";
   };
   const decrementar = () => {
     if (count > 0) {
       setCount(count - 1);
+      document.body.style.backgroundColor="red";
     }
   };
 
