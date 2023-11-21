@@ -32,7 +32,7 @@ const ContadorResponsive = () => {
         </ButtonGroup>
       </Flex>
 
-      <Container bg="pink" position="relative" top="90px" w="350px" h="200px">
+      <Container bg="pink" position="relative" top="5.625em" w="21.875em" h="12.5em">
         <Box>
           <Box>
             <Box
@@ -50,8 +50,8 @@ const ContadorResponsive = () => {
           <Box
             display="flex"
             position="relative"
-            top="40px"
-            left="1px"
+            top="2.5em"
+            left="0.063em"
             alignItems="center"
             bg="pink"
           >
