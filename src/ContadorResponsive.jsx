@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Stack, Box, Button, Container, Avatar, Flex, AlertDialog } from "@chakra-ui/react";
 import { Spacer, Heading, ButtonGroup } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
+
 
 const ContadorResponsive = () => {
   const [count, setCount] = useState(0);
+  
 
   function incrementar() {
     if (count < 10) {
@@ -21,8 +24,13 @@ const ContadorResponsive = () => {
       setCount(count - 1);
       document.body.style.backgroundColor="red";
     }
-  };
-
+  
+  function MyComponent(){
+  const [isSmallerThan300]=useMediaQuery("(max-width:300px)")
+  return(
+    <div>{isSmallerThan300 ? (<p>la pantalla es mas peque</p>):(<p>la pantalla es mas grande</p>)}</div>)}
+  
+  }
   return (
     <div>
       <Flex bg="pink" minWidth="max-content" alignItems="center" gap="2">
