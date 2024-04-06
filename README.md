@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 Contador Responsive con Chakra UI y useState
 
-#Objetivo: Integrar Chakra UI con useState en React para desarrollar un contador interactivo con diseño responsive.
+## Objetivo: Integrar Chakra UI con useState en React para desarrollar un contador interactivo con diseño responsive.
 
 Instrucciones:
 
